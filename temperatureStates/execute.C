@@ -118,4 +118,7 @@
     // Save plots
     canvas->SaveAs("state_temperatures.png");
     canvasNational->SaveAs("national_average_temperatures.png");
+    // upload to s3
+    system("cps3.sh national_average_temperatures.png results-bucket-xf34c65");
+    system("cps3.sh state_temperatures.png results-bucket-xf34c65");
 }
