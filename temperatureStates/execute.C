@@ -1,6 +1,6 @@
 {
     // Open the CSV file
-    std::ifstream file("temperaturestates-2023.csv");
+    std::ifstream file("/app/temperaturestates-2023.csv");
     if (!file.is_open()) {
         std::cerr << "Failed to open file!" << std::endl;
         return;
